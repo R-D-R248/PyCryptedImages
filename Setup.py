@@ -6,9 +6,9 @@ setup(
     description='A Python package to hide text in fake image files',  # Short description
     long_description=open('README.md').read(),  # Long description from README
     long_description_content_type='text/markdown',  # Content type for README
-    author='Roshan D Roy',  # Your name
+    author='Roshan Deepu Roy',  # Your name
     author_email='roshandeepuroy@gmail.com',  # Your email address
-    url='https://github.com/yourusername/PyCryptedImages',  # Link to the package repository
+    url='https://github.com/R-D-R248/PyCryptedImages',  # Link to the package repository
     packages=find_packages(),  # Automatically find packages in the source folder
     classifiers=[  # Classifiers help users find your package
         'Programming Language :: Python :: 3',
