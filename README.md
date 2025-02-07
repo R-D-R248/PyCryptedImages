@@ -1,3 +1,4 @@
+
 # PyCryptedImages
 
 **PyCryptedImages** is a Python package designed to hide text in fake image files. It allows you to encode text into a file that appears to be an image, making it useful for various applications, such as steganography or protecting sensitive data.
@@ -38,6 +39,17 @@ PyCryptedImages.EncodeFile(text="Hello, world!", path="C:/Users/YourUser/Desktop
 
 ## Example Output
 This will create a file named **hidden_message.jpg** on your Desktop, but it will actually contain the text `"Hello, world!"`.
+
+## Decode Function
+To decode the hidden text from a fake image file, use the following code:
+
+```python
+import PyCryptedImages
+
+# Decode text from the fake image
+text = PyCryptedImages.Decode(path="C:/Users/YourUser/Desktop", name="hidden_message")
+print("Decoded Text:", text)
+```
 
 ## Contributing
 Feel free to submit issues or contribute by making pull requests on [GitHub](https://github.com/R-D-R248/PyCryptedImages).
