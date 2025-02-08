@@ -51,6 +51,11 @@ text = PyCryptedImages.Decode(path="C:/Users/YourUser/Desktop", name="hidden_mes
 print("Decoded Text:", text)
 ```
 
+## Update Log
+- **1.0**: Initial Release
+- **1.1**: Added Decode Function
+- **1.2**: Fixed the Decode Function Error and added Update Log
+
 ## Contributing
 Feel free to submit issues or contribute by making pull requests on [GitHub](https://github.com/R-D-R248/PyCryptedImages).
 
