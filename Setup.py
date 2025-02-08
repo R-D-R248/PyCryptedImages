@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='PyCryptedImages',  # Your package name
-    version='1.1',  # Initial version
+    version='1.2',  # Initial version
     description='A Python package to hide text in fake image files',  # Short description
     long_description=open('README.md').read(),  # Long description from README
     long_description_content_type='text/markdown',  # Content type for README
