@@ -32,25 +32,20 @@ def EncodeFile(*, text, path, name):
     else:
         raise FileNotFoundError(f"Error: The location '{path}' is not valid.")
     
-def Decode(* , path, name):
+def Decode(*, path, name):
     path = path.replace("/", "\\")
 
     if os.path.exists(path):
         if path[-1] == "\\":
             Open_Path = path + name + ".jpg"
-            try:
-                with open(Open_path, 'r') as file:
-                    content = file.read()
-                        print(content)
-            except:
-                raise FileNotFoundError(f"Error: The File '{Open_Path}' is not valid.")
         else:
             Open_Path = path + "\\" + name + ".jpg"
-            try:
-                with open(Open_path, 'r') as file:
-                    content = file.read()
-                        print(content)
-            except:
-                raise FileNotFoundError(f"Error: The File '{Open_Path}' is not valid.")
+        
+        try:
+            with open(Open_Path, 'r') as file:
+                content = file.read()
+                print(content)
+        except:
+            raise FileNotFoundError(f"Error: The File '{Open_Path}' is not valid.")
     else:
         raise FileNotFoundError(f"Error: The location '{path}' is not valid.")
